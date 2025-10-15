@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Newspaper Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      border-bottom: 2px solid #000;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .article {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .article img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .article-content {
+      padding: 10px;
+    }
+    .article-content h3 {
+      margin: 10px 0;
+      font-size: 18px;
+      color: #333;
+    }
+    .article-content p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 10px;
+      border-top: 1px solid #ccc;
+      color: #777;
+      font-size: 14px;
+    }
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Daily News</h1>
+    <div class="grid">
+      <div class="article">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" alt="Beach">
+        <div class="article-content">
+          <h3>New Beach Cleanup Drive Launched</h3>
+          <p>Volunteers gathered early morning to clean the coastal area, collecting over 500 kg of waste in just one day.</p>
+        </div>
+      </div>
+
+      <div class="article">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800" alt="Technology">
+        <div class="article-content">
+          <h3>AI in Education: Transforming Classrooms</h3>
+          <p>Schools are adopting AI-based tools to personalize learning and enhance student engagement across the country.</p>
+        </div>
+      </div>
+
+      <div class="article">
+        <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800" alt="Sports">
+        <div class="article-content">
+          <h3>Local Team Wins Championship</h3>
+          <p>The city’s football team triumphed in a thrilling match that ended with a last-minute goal, securing their victory.</p>
+        </div>
+      </div>
+
+      <div class="article">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800" alt="Nature">
+        <div class="article-content">
+          <h3>Rainforest Conservation Efforts Expand</h3>
+          <p>New initiatives have been introduced to protect biodiversity and reduce deforestation in key forest regions.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      © 2025 Daily News | All rights reserved
+    </footer>
+  </div>
+</body>
+</html>
