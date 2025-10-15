@@ -3,49 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
-<body>
-    <img src="./assets/cat.jpg " width="100px" height="100px">
+<body style="margin:0; height:100vh; display:flex; justify-content:center; align-items:center;">
 
-    <form>
-        <label>
-            Username
-        </label>
-        <spam style="color:red">*</spam>
-        <input type="text"/>
+    <div style="display:flex; justify-content:center; align-items:center; gap:40px;">
 
-        <br>
-        <label>password</label>
-        <input type="text"/><br>
-        <label>email</label>
-        <input type="email" autofocus/>
-        <div></div>
-        <label>gender</label>
-        
-        <input type="radio"/>FEMALE
-        <input type="radio"/>MALE
         <div>
-        <label>DOB</label>
-        <input type="date">
+            <form>
+                <label>Username</label>
+                <span style="color:red">*</span>
+                <input type="text"/><br><br>
+
+                <label>Password</label>
+                <span style="color:red">*</span>
+                <input type="password"/><br><br>
+
+                <label>Email</label>
+                <span style="color:red">*</span>
+                <input type="email" autofocus/><br><br>
+
+                <label>Gender</label><br>
+                <input type="radio" name="gender"/> Female
+                <input type="radio" name="gender"/> Male<br><br>
+
+                <label>DOB</label>
+                <input type="date"><br><br>
+
+                <label>Feedback</label><br>
+                <textarea wrap="hard"></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
         </div>
+
         <div>
-            feedback<textarea wrap="hard"></textarea>
+            <img src="./assets/cat.jpg" width="200" height="200" alt="Student Image">
         </div>
-<input type ="button"value="submit">
-    </form>
-    <table>
-        <tr>
-        <th><lable>User Name</lable><spam style="color:red">*</spam></th>
 
-        </tr>
-        <tr>
-            <td><input type="text"/> </td>
-            <td><input type="Submit"/></inputtype></td>
-        </tr>
+        <div>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30475.05956769032!2d78.54830076522879!3d17.29708702169809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba22a995f0001%3A0xcf3eca612dcb2a7f!2sHanuman%20Temple!5e0!3m2!1sen!2sin!4v1760519935340!5m2!1sen!2sin" 
+                width="300" height="200" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
 
-    </table>
-
-    
 </body>
 </html>
