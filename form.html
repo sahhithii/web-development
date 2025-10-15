@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-start;
+        }
+        .container img {
+            margin-left: 30px;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="width: 50%;height: 200px;"></div>
+        <form>
+            <label> Username </label>  <span style="color:red;">*</span>
+            <input type="text">
+            <br>
+            <label>password</label>
+            <input type="text"/><br>
+            <label>email</label>
+            <input type="email" autofocus/>
+            <div></div>
+            <label>gender</label>
+            <input type="radio" name="gender"/>FEMALE
+            <input type="radio" name="gender"/>MALE
+            <div>
+                <label>dob</label>
+                <input type="date">
+            </div>
+            <div>
+                feedback<textarea wrap="hard"></textarea>
+            </div>
+            <input type="button" value="submit">
+        </form>
+        <img src="./assets/cute puppy.jpeg" alt="Cute Puppy" width="500px" height="500px"/>
+    </div>
+</body>
+</html>
